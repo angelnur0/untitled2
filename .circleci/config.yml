@@ -11,7 +11,6 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
-  -checkout:
   -run:
     name: run test
     command: |
