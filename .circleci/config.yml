@@ -11,3 +11,11 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
+Hello-World:
+  docker:
+    - image: alpine:3.7
+  steps:
+    - run:
+        name: Running all tests
+        command: |
+          npm test
