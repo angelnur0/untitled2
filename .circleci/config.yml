@@ -11,4 +11,8 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
-      - npm test
+  -checkout
+  -run:
+    name: run test
+    command: |
+      npm test
