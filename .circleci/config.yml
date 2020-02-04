@@ -16,8 +16,8 @@ workflows:
     docker:
       - image: alpine:3.7
     steps:
-      -- checkout
-        - run:
+      - checkout
+      - run:
         name: run tests
         command: 'npm test'
 
