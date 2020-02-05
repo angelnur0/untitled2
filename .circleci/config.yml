@@ -14,8 +14,7 @@ jobs:
 
     steps:
       - checkout
-      - store_test_results:
-          path: test-results
+
 
 
       # Download and cache dependencies
@@ -34,3 +33,5 @@ jobs:
 
       # run tests!!
       - run: npm test
+      - store_test_results:
+          path: test-results
