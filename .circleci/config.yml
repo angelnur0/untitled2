@@ -1,10 +1,6 @@
 version: 2
 jobs:
-  - build
-  - request-testing:
-      type: approval
-      requires:
-        - build
+  build:
     docker:
       # specify the version you desire here
       - image: circleci/node:8.10
